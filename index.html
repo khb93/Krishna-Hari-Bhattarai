@@ -74,19 +74,40 @@ p {
                 
             <h2>External Links</h2>
            <!-- Add space between paragraphs -->
-<p style="margin-bottom: 20px;">         
-<div>
-    <div class="outer-container">
+<p style="margin-bottom: 20px;">  
+    <style>
+    .outer-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .inner-container {
+        display: flex;
+        justify-content: space-between;
+        width: 70%; /* 100% - 15% left - 15% right */
+    }
+    .inner-container a {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .inner-container img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<div class="outer-container">
     <div class="inner-container">
-    <p style="color: black; font-weight: bold;">Namlo Himalaya</p>
+        <p style="color: black; font-weight: bold;">Namlo Himalaya</p>
         <a href="https://namlohimalaya.org">
             <img src="nahi.png" alt="Namlo Himalaya">
         </a>
-        <p style="color: black; font-weight: bold;">Associacio Namlo Europa</p>
-        <a   <a href="https://namloeuropa.org">
+        <a href="https://namloeuropa.org">
             <img src="ane.png" alt="Namlo Europa">
         </a>
     </div>
+</div>
+
 </div>
            <!-- Add space between paragraphs -->
 <p style="margin-bottom: 20px; text-align: center; ">
